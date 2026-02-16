@@ -1,20 +1,19 @@
----
-
-# 🌟 JavaScript Execution Context – Detailed Notes
+# 🌟 JavaScript Execution Context
 
 *(Namaste JavaScript – Core Fundamentals)*
 
 ![Image](https://miro.medium.com/1%2AdwVdcnuD17WnwyuBVv7bkQ.png)
+
 
 ---
 
 ## 🔑 Core Fundamental (Most Important Line)
 
 > **Everything in JavaScript happens inside an Execution Context**
-> 
-- No JavaScript code runs outside an execution context
-- Execution Context is like a **big box / container**
-- Entire JavaScript code is executed inside this box
+
+* No JavaScript code runs outside an execution context
+* Execution Context is like a **big box / container**
+* Entire JavaScript code is executed inside this box
 
 ---
 
@@ -22,9 +21,9 @@
 
 An **Execution Context** is an environment where JavaScript code is:
 
-- **Stored**
-- **Executed**
-- **Managed**
+* **Stored**
+* **Executed**
+* **Managed**
 
 Think of it as a **container** with **two main components**.
 
@@ -36,12 +35,12 @@ Think of it as a **container** with **two main components**.
 
 *(Also called: Variable Environment)*
 
-- Stores **variables** and **functions**
-- Stored in **key–value pairs**
+* Stores **variables** and **functions**
+* Stored in **key–value pairs**
 
-### Example:
+#### Example:
 
-```jsx
+```js
 var a = 10;
 function greet() { }
 ```
@@ -55,14 +54,13 @@ greet → function
 
 ✅ **Important Points**
 
-- Memory is allocated **before execution**
-- Functions and variables are available here
-- This explains **Hoisting**
+* Memory is allocated **before execution**
+* Functions and variables are available here
+* This explains **Hoisting**
 
 📌 Heavy word to remember:
 
 > **Memory Component = Variable Environment**
-> 
 
 ---
 
@@ -70,14 +68,13 @@ greet → function
 
 *(Also called: Thread of Execution)*
 
-- Executes code **line by line**
-- Runs instructions **one at a time**
-- Moves to next line only after finishing the current line
+* Executes code **line by line**
+* Runs instructions **one at a time**
+* Moves to next line only after finishing the current line
 
 📌 Heavy word to remember:
 
 > **Code Component = Thread of Execution**
-> 
 
 ---
 
@@ -101,7 +98,6 @@ Execution Context
 ### 🔹 JavaScript is:
 
 > **Synchronous and Single-Threaded**
-> 
 
 Let’s break this down 👇
 
@@ -109,12 +105,12 @@ Let’s break this down 👇
 
 ## 🧵 What does *Single-Threaded* mean?
 
-- JavaScript can execute **only ONE command at a time**
-- No parallel execution of multiple lines
+* JavaScript can execute **only ONE command at a time**
+* No parallel execution of multiple lines
 
 📌 Example:
 
-```jsx
+```js
 console.log("A");
 console.log("B");
 ```
@@ -130,13 +126,12 @@ B
 
 ## ⏳ What does *Synchronous* mean?
 
-- JavaScript follows a **specific order**
-- Executes the next line **only after** the current line finishes
+* JavaScript follows a **specific order**
+* Executes the next line **only after** the current line finishes
 
 📌 Meaning:
 
 > One line at a time, in sequence
-> 
 
 ---
 
@@ -146,22 +141,21 @@ B
 
 ➡ JavaScript:
 
-- Executes **one command at a time**
-- Executes commands **in order**
-- Waits for current execution to finish before moving ahead
+* Executes **one command at a time**
+* Executes commands **in order**
+* Waits for current execution to finish before moving ahead
 
 ---
 
 ## 🤔 Then What About Asynchronous (AJAX)?
 
-- You may have heard **AJAX (Asynchronous JavaScript)**
-- Don’t worry!
-- This will be explained **later with Web APIs, Call Stack, Callback Queue, Event Loop**
+* You may have heard **AJAX (Asynchronous JavaScript)**
+* Don’t worry!
+* This will be explained **later with Web APIs, Call Stack, Callback Queue, Event Loop**
 
 👉 For now, remember:
 
 > **Core JavaScript itself is synchronous and single-threaded**
-> 
 
 ---
 
@@ -169,22 +163,36 @@ B
 
 ### ✅ Execution Context
 
-- Big container where JS code runs
+* Big container where JS code runs
 
 ### ✅ Two Components
 
 1. **Memory Component**
-    - Stores variables & functions
-    - Also called **Variable Environment**
+
+   * Stores variables & functions
+   * Also called **Variable Environment**
+
 2. **Code Component**
-    - Executes code line by line
-    - Also called **Thread of Execution**
+
+   * Executes code line by line
+   * Also called **Thread of Execution**
 
 ### ✅ JavaScript Nature
 
-- **Single-threaded**
-- **Synchronous**
+* **Single-threaded**
+* **Synchronous**
 
 ---
 
-##
+## 🎯 Why This is Important?
+
+* Helps understand:
+
+  * Hoisting
+  * Call Stack
+  * Asynchronous JavaScript
+  * Event Loop
+* Most developers skip this ❌
+* Strong fundamentals = Better developer 🚀
+
+---
