@@ -183,16 +183,3 @@ B
 * **Synchronous**
 
 ---
-
-## 🎯 Why This is Important?
-
-* Helps understand:
-
-  * Hoisting
-  * Call Stack
-  * Asynchronous JavaScript
-  * Event Loop
-* Most developers skip this ❌
-* Strong fundamentals = Better developer 🚀
-
----
